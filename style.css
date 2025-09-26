@@ -1,0 +1,135 @@
+/* Import Font dari Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* Reset dan Pengaturan Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212; /* Warna latar belakang gelap */
+  color: #e0e0e0; /* Warna teks utama (putih keabuan) */
+  line-height: 1.7;
+}
+
+/* Kontainer Utama */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1e1e1e; /* Warna latar konten sedikit lebih terang */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Header dan Banner */
+header {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ffd700; /* Warna Emas untuk judul utama */
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intro {
+  font-size: 1.1em;
+  color: #b0b0b0;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #4caf50; /* Warna hijau khas tombol */
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #444;
+  font-weight: 600;
+}
+
+/* List Styling (ul, ol) */
+ul,
+ol {
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #ffffff; /* Membuat teks tebal lebih menonjol */
+}
+
+.prize-list li {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/* Tombol Call-to-Action (CTA) */
+.cta-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(45deg, #4caf50, #81c784);
+  color: #ffffff;
+  padding: 15px 40px;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px; /* Membuat tombol berbentuk pil */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px); /* Efek tombol terangkat saat disentuh mouse */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Penyesuaian untuk layar kecil (Responsif) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .container {
+    margin: 10px;
+    padding: 15px;
+  }
+}
